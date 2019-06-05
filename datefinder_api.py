@@ -8,7 +8,7 @@ import datefinder
 import datetime
 #api = Api(app)
 
-@app.route("/find")
+@app.route("/")
 def train():
     inp=request.args['text']
     cat=request.args['cat']
