@@ -8,7 +8,7 @@ import datefinder
 import datetime
 #api = Api(app)
 
-@app.route("/")
+@app.route("/find")
 def train():
     inp=request.args['text']
     cat=request.args['cat']
@@ -39,9 +39,6 @@ def train():
             ret= jsonify({'Invoice Date': 0})
         return ret
 
-@app.route("/findweb")
+@app.route("/")
 def webfind():
-    
     return "underproduction"
-if __name__ == '__main__':
-    app.run()
